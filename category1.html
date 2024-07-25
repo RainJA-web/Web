@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Store</title>
+    <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="ecommerce.html">Bootstrap Store</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="active dropdown-toggle" data-toggle="dropdown">Danh mục <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="category.html">Áo thun &amp; Accessories</a></li>
+                            <li><a href="category1.html">Áo sơ mi</a></li>
+                            <li><a href="category2.html">Áo khoác &amp; Health</a></li>
+                            <li><a href="ecommerce.html">All Danh mục</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="badge pull-right">4</span><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                    <li><a href="account.html"><i class="glyphicon glyphicon-user"></i></a></li>
+                    <!-- Nút Sign in với thuộc tính data-toggle và data-target -->
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Sign in</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h2 class="modal-title" id="myModalLabel">Sign in</h2>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm" class="form-signin" role="form">
+                        <h3 class="form-signin-heading">Sign in with your email address</h3>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="rememberMe"> Remember me
+                            </label>
+                        </div>
+                        <button id="submitBtn" class="btn btn-lg btn-primary btn-block" type="button">Sign in</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-facebook btn-large btn-caps btn-block">Facebook <span class="icon-facebook"></span></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-twitter btn-large btn-caps btn-block">Twitter <span class="icon-twitter"></span></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-lg btn-caps btn-block"><span class="icon-dribbble"></span></a>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+      <!-- Page Content -->
+  <div id="content" class="container">
+    <div class="row carousel-holder">
+      <div class="col-md-12">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+                <img class="slide-image" src="img/Screenshot 2024-07-25 160008.png" alt="" />
+            </div>
+            <div class="item">
+              <img class="slide-image" src="img/Screenshot 2024-07-25 160343.png" alt="" />
+            </div>
+            <div class="item">
+              <img class="slide-image" src="img/Screenshot 2024-07-25 160506.png" alt="" />
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+          <!-- Phần Danh mục -->
+          <div class="col-sm-4 col-md-3">
+              <h3>Danh mục</h3>
+              <div class="list-group">
+                  <a href="category.html" class="list-group-item">Áo Thun</a>
+                  <a href="category1.html" class="list-group-item">Áo sơ mi</a>
+                  <a href="category2.html" class="list-group-item">Áo khoác</a>
+              </div>
+          </div>
+  
+          <!-- Phần danh sách sản phẩm -->
+          <div class="col-sm-8 col-md-9">
+              <div class="row">
+                  <div class="col-sm-4">
+                      <div class="thumbnail">
+                          <img src="https://cdn2.yame.vn/pimg/ao-so-mi-tay-ngan-the-seafarer-18-0022836/5d521d2f-2fce-0f00-38ac-001b49f31037.jpg?w=540&h=756&c=true&ntf=false/320x150" alt="">
+                          <div class="caption">
+                              <h4 class="pull-right">$15.99</h4>
+                              <h4><a href="single-item.html">Áo Sơ Mi Cổ Mở</a></h4>
+                              <p>Chất liệu: Vải Polyester<p>
+                                <p>Thành phần: 100% Polyester<p>
+                          </div>
+                          <div class="ratings">
+                              <p class="pull-right">15 reviews</p>
+                              <p>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star-empty"></span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-sm-4">
+                      <div class="thumbnail">
+                          <img src="https://cdn2.yame.vn/pimg/ao-so-mi-tay-ngan-one-piece-31-0022682/31a25f63-1b9a-3900-6566-001ad597d799.jpg?w=540&h=756&c=true&ntf=false/320x150" alt="">
+                          <div class="caption">
+                              <h4 class="pull-right">$18.79</h4>
+                              <h4><a href="single-item.html">Áo Sơ Mi Cổ Bẻ</a></h4>
+                              <p>Chất liệu: Vải Khaki</p>
+                            </p>Thành phần: 100% Polyester</p>
+                          </div>
+                          <div class="ratings">
+                              <p class="pull-right">12 reviews</p>
+                              <p>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star-empty"></span>
+                                  <span class="glyphicon glyphicon-star-empty"></span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-sm-4">
+                      <div class="thumbnail">
+                          <img src="https://cdn2.yame.vn/pimg/ao-so-mi-co-lanh-tu-soi-bamboo-wrinkle-free-06-0022470/feaf88b3-540a-1c00-9e25-001ad36812dd.jpg?w=540&h=756&c=true&ntf=false/320x150" alt="">
+                          <div class="caption">
+                              <h4 class="pull-right">$15.99</h4>
+                              <h4><a href="single-item.html">Áo Sơ Mi Cổ Bẻ</a></h4>
+                              <p>Chất liệu: Vải Sợi Tre (Bamboo)</p>
+                            </p>Thành phần:48.5% BB 48.5% PL </p>
+                          </div>
+                          <div class="ratings">
+                              <p class="pull-right">31 reviews</p>
+                              <p>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star-empty"></span>
+                                  <span class="glyphicon glyphicon-star-empty"></span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <!-- Thêm các sản phẩm khác tương tự cho 3 cột -->
+                  <div class="col-sm-4">
+                      <div class="thumbnail">
+                          <img src="https://cdn2.yame.vn/pimg/ao-so-mi-co-lanh-tu-soi-modal-wrinkle-free-03-0022463/d7afd5bb-461d-8900-b25a-001ad3594a27.jpg?w=540&h=756&c=true&ntf=false/320x150" alt="">
+                          <div class="caption">
+                              <h4 class="pull-right">$14.99</h4>
+                              <h4><a href="single-item.html">Áo Sơ Mi Cổ Trụ</a></h4>
+                              <p>Chất liệu: Modal Poly</p>
+                            </p> Thành phần:12% MD 88% PL</p>
+                          </div>
+                          <div class="ratings">
+                              <p class="pull-right">6 reviews</p>
+                              <p>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star-empty"></span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-sm-4">
+                      <div class="thumbnail">
+                          <img src="https://cdn2.yame.vn/pimg/ao-so-mi-tay-dai-soi-poly-wrinkle-free-11-0022556/98eb2a67-ac7c-9900-f8d3-001ad35b6794.jpg?w=540&h=756&c=true&ntf=false" alt="">
+                          <div class="caption">
+                              <h4 class="pull-right">$15.99</h4>
+                              <h4><a href="single-item.html">Áo Sơ Mi Cổ Bẻ</a></h4>
+                              <p>Chất liệu: Vải sợi Hoa Hồng </p>
+                            </p>Thành phần: 55% Rose 42% PL </p>
+                          </div>
+                          <div class="ratings">
+                              <p class="pull-right">18 reviews</p>
+                              <p>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star-empty"></span>
+                                  <span class="glyphicon glyphicon-star-empty"></span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-sm-4">
+                      <div class="thumbnail">
+                          <img src="https://cdn2.yame.vn/pimg/ao-so-mi-tay-dai-soi-ca-phe-wrinkle-free-13-0022479/41fda0a1-84dc-9600-b167-001ad35b2dfb.jpg?w=540&h=756&c=true&ntf=false/320x150" alt="">
+                          <div class="caption">
+                              <h4 class="pull-right">$16.99</h4>
+                              <h4><a href="single-item.html">Áo Sơ Mi Cổ Bẻ</a></h4>
+                              <p>Chất liệu: Sợi cà phê</p>
+                            </p>Thành phần :50% Coffee 50% PL</p>
+                          </div>
+                          <div class="ratings">
+                              <p class="pull-right">18 reviews</p>
+                              <p>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star"></span>
+                                  <span class="glyphicon glyphicon-star-empty"></span>
+                                  <span class="glyphicon glyphicon-star-empty"></span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+  <!-- Footer -->
+  <div class="container">
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright &copy; <a href="ecommerce.html">Packt Publishing</a> 2024</p>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
